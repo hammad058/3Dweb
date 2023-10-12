@@ -1,0 +1,135 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&family=Roboto+Condensed&display=swap');
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+}
+.back{
+    width: 100%;
+    height: 100vh;
+    
+}
+.back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#workingarea{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height:100vh;
+    max-width: 1920px;
+}
+
+#nav{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav img{
+    height: 60px;
+    
+}
+
+#nleft, #nright{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+#nav a{
+    pointer-events: all;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#hero{
+    position: absolute;
+    top: 25%;
+    left: 0;
+    transform: translate(0% -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: red; */
+}
+
+#heroleft{
+    min-width: 50%;
+}
+
+#heroleft .elem{
+    height: 9vw;
+    overflow: hidden;
+}
+#heroleft .elem h1{
+    line-height: .9;
+    color: #ffffff;
+    font-family: 'kajiro';
+    font-weight: 100;
+    font-size: 11vw;
+}
+
+#heroleft button{
+    cursor: pointer;
+    pointer-events: all;
+    padding: .6vw 2vw;
+    font-family: 'kajiro';
+    font-size: 2vw;
+    margin-top: 2vw;
+}
+
+#heroright{
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #ffffff;
+}
+
+#heroright p {
+    font-weight: 300;
+    text-align: right;
+    font-size: 11.5px;
+}
+
+#heroright #imagediv{
+    width: 100%;
+    height: 140px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    background-size:cover;
+    background-image: url(https://images.unsplash.com/photo-1524159730786-4e74a1b78d7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE4fHxwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-position:center;
+}
+
+#heroright p:nth-child(3){
+    margin-bottom: 100px;
+}
